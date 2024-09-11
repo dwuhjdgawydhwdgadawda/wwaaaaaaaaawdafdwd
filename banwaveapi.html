@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Banwave API</title>
+</head>
+<body>
+    <h1>Roblox Banwave API</h1>
+    <script>
+        const banwaveData = {
+            "banwave": "No current banwave",
+            "timestamp": new Date().toISOString()
+        };
+
+        // Serve the banwave data
+        window.addEventListener('load', () => {
+            document.body.innerHTML += `<pre>${JSON.stringify(banwaveData, null, 2)}</pre>`;
+        });
+    </script>
+</body>
+</html>
